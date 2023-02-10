@@ -1,5 +1,5 @@
 
-/*  ------------- reset ------------  */
+/*  ------------- reset e variáveis ------------  */
 
 * {
     margin: 0;
@@ -7,6 +7,13 @@
     font-family: Arial, Helvetica, sans-serif;
     color: aliceblue;
     font-family: 'Poppins';
+}
+
+:root {
+    --corheader: rgb(90, 15, 15);
+    --corfundo1: rgb(167,17,17,1);
+    --corfundo2: rgba(120, 16, 16);
+    --corbotaop: rgb(72, 17, 17);
 }
 
 /*  ------------- reset - end  ------------  */
@@ -41,17 +48,16 @@ a:hover {
 
 header{
     padding: 2px;
-    background-color: rgb(90, 15, 15);
+    background-color: var(--corheader);
     width: 100%;
     position: fixed;
     z-index: 100;
-
 }
 
 .menu-geral {
     width: 100%;
     display: flex;
-    max-width: 1100px;
+    max-width: 1150px;
     justify-content: space-between;
     display: flex;
     margin: auto;
@@ -108,7 +114,7 @@ header{
 }
 
 #botao-inicio {
-    background-color: rgb(120, 19, 19);
+    background-color: var(--corfundo2);
     padding: 2%;
     margin-top: 3%;
     border: 0ch;
@@ -121,7 +127,7 @@ header{
 
 #botao-inicio:hover {
     transform: translateY(-4px);
-    background-color: rgb(72, 17, 17);
+    background-color: var(--corbotaop);
 }
 
 /*  -------   animação  --------   */
@@ -189,7 +195,7 @@ header{
 }
 
 .s-sobremim {
-    background-color: rgb(167,17,17,1);
+    background-color: var(--corfundo1);
 }
 
 .SobreMim {
@@ -205,7 +211,7 @@ header{
 }
 
 .SobreMim button {
-    background-color: rgb(120, 19, 19);
+    background-color: var(--corfundo2);
     padding: 2%;
     margin-top: 30px;
     border: 0ch;
@@ -217,7 +223,7 @@ header{
 
 .SobreMim button:hover{
     transform: translateY(-5px);
-    background-color: rgb(72, 17, 17);
+    background-color: var(--corbotaop);
 }
 
 #coffe:hover{
@@ -243,7 +249,7 @@ header{
 /*---------  projetos  --------*/
 
 .projetos {
-    background-color: rgba(120, 16, 16);
+    background-color: var(--corfundo2);
     text-align: center;
     padding: 20px 0px 100px;
 }
@@ -285,7 +291,7 @@ header{
 }
 
 .projetos #ver {
-    background-color: rgb(167, 17, 17);
+    background-color: var(--corfundo1);
     font-size: 15px;
     margin: 20px;
     padding: 10px;
@@ -297,12 +303,12 @@ header{
 }
 
 .projetos #ver:hover {
-    background-color: rgb(72, 17, 17);
+    background-color: var(--corbotaop);
     transform: translateY(-4px);
 }
 
 .projetos .container-projetos div button {
-    background-color: rgb(169, 27, 27);
+    background-color: var(--corfundo1);
     margin: 20px 0 0;
     padding: 3%;
     border: 0;
@@ -314,11 +320,11 @@ header{
 
 .projetos .container-projetos div button:hover {
     transform: translateY(-5px);
-    background-color: rgb(72, 17, 17);
+    background-color: var(--corbotaop);
 }
 
 .projetos .git .github {
-    background-color: rgb(120, 19, 19);
+    background-color: transparent;
     border: 0;
     padding: 10px 10px 10px;
     cursor: pointer;
@@ -334,7 +340,7 @@ header{
 /* ------   contatos   ------  */
 
 .container-contatos{
-    background-color: rgb(167,17,17,1);
+    background-color: var(--corfundo1);
 }
 
 .contatos {
@@ -392,7 +398,7 @@ header{
 /* ------ rodapé -------- */
 
 .rodape {
-    background-color: rgba(120, 16, 16);
+    background-color: var(--corfundo2);
     display: flex;
     justify-content: space-around;
     padding: 5px;
