@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="src/css/estilo.css">
+    <link rel="shortcut icon" href="src/img/favicon.ico" type="image/x-icon">
+    <title>Maurício Nascimento | Portfólio</title>
+</head>
+<body>
+    <header class="cabecalho">
+        <div class="menu-geral">
+            <a href="#inicio"><img id="logo-m" src="src/img/logo m.jpg" alt="logo 'M'"></a>
+              <!--navegação-->
+            <nav>
+                <div class="menu-padrao">
+                    <ul class="menu">
+                        <li>
+                            <a href="#inicio">Home</a>
+                        </li>
+                        <li>
+                            <a href="#sobremim">Sobre Mim</a>
+                        </li>
+                        <li>
+                            <a href="#projetos">Projetos Pessoais</a>
+                        </li>
+                        <li>
+                            <a href="#contatos">Contatos</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-responsivo">
+            
+                </div>
+            </nav>
+        </div>
+    </header>
+        <!----home---->
+    <main>
+        <section>
+            <div class="inicio" id="inicio">
+                <!--parte inicial do portfolio-->
+                <div class="txt">
+                    <h1>
+                        Olá, bem vindo(a) ao meu portfólio
+                    </h1>
+                    <h3 id="apresentacao">Maurício Sosmaiar Nascimento,<br>
+                        Desenvolvedor Front-End</h3>
+                    <button id="botao-inicio" class="botao" onclick="chamarlinkedin()">Conhecer mais do Dev</button>
+               </div>
+                <img id="mauricio" src="src/img/mauricio.png" alt="desenho mauricio">
+            </div>
+        </section>
+           <!--  ---------- sobre mim -----------  -->
+        <section class="s-sobremim">
+            <div>
+                <div class="SobreMim" id="sobremim">
+                    <img id="coffe" src="src/img/coffe.png" alt="codigo-café">
+                    <div class="info-sobremim" data-anima="right">
+                        <h1>Maurício Sosmaiar Nascimento</h1>
+                        <p>Nascido em Porto Alegre - RS. <br>
+                        Tenho 21 anos, resido em Rosário do Sul - RS e sou um desenvolvedor frontend formado em Análise e Desenvolvimento de Sistemas (2021 - 2023). <br>
+                        Desenvolvo utilizando sobretudo <strong id="bold"> javascript, HTML5, CSS3 e SQL.</strong> <br>
+                        Para mim as coisas mais atrativas no desenvolvimento web são as diversas formas de poder transformar criatividade e ideias em códigos que quando compilados da forma correta, formam um site.</p>
+                        <button onclick="chamarlinkedin()">Linkedin</button>
+                        <button onclick="chamarInstagram()">Instagram</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+         <!-- --------  projetos ---------- -->
+        <section>
+            <div class="projetos" id="projetos">
+                <h1 data-anima="up">Principais Projetos</h1>
+                <div class="container-projetos" data-anima="up">
+                    <div class="flex">
+                        <a href="https://flex-transportes.netlify.app" target="_blank">
+                            <abbr title="Projeto de prática sobre flexbox em css">
+                                <img id="flex-img" src="src/img/flex-turismos-png.png" alt="flex-turismos">
+                            </abbr>
+                        </a>
+                        <button onclick="chamarFlex()">Flex Turismos</button>
+                    </div>
+                    <div class="breve">
+                        <a href="https://projeto-dark-souls.netlify.app" target="_blank">
+                            <abbr title="Projeto Dark Souls versão própria">
+                                <img id="" src="src/img/dark-souls.png" alt="imagem 'dark-souls'">
+                            </abbr>
+                        </a>
+                        <button onclick="chamarDark()">Dark Souls page</button>
+                    </div>
+                    <div class="insta">
+                        <a href="https://instagram-menos-que-original.netlify.app" target="_blank">
+                            <abbr title="Projeto de css para recriar a tela de login do instagram">
+                                <img id="insta-img" src="src/img/instagram-png.png" alt="copia do instagram">
+                            </abbr>
+                        </a>
+                        <button onclick="chamarInstagram()">Instagram Cópia</button>
+                    </div>
+                </div>
+                <!---------------- projetos escondidos ----------------->
+                <div class="container-projetos" id="div-escondido" data-anima="up">
+                    <div class="mario">
+                        <a href="https://projeto-mario.netlify.app" target="_blank">
+                            <abbr title="Projeto pessoal sobre uma landing page do novo filme do mário">
+                                <img id="mario-img" src="src/img/mario-png.png" alt="pagina sobre o mario">
+                            </abbr>
+                        </a>
+                        <button onclick="chamarMario()">Mario page</button>
+                    </div>
+                    <div class="enigma">
+                        <a href="https://pre-alpha-codigo-safe.netlify.app" target="_blank">
+                            <abbr title="jogo de enigmas desenvolvido em um final de semana, durante o inicio dos meus estudos sobre frontend">
+                                <img id="enigma-img" src="src/img/enigmas-png.png" alt="jogo-enigmas">
+                            </abbr>
+                        </a>
+                        <button onclick="chamarEnigma()">Jogo de Enigmas</button>
+                    </div>
+                    <div class="breve">
+                        <a href="https://m4uriciosn.github.io/Percy-Jackson/" target="_blank">
+                            <abbr title="Página sobre uma saga de livros utilizando HTML e CSS">
+                                <img id="breve-img" src="src/img/percy-jackson.png" alt="imagem 'breve'">
+                            </abbr>
+                        </a>
+                        <button onclick="chamarPercy()">Fanpage de Percy Jackson</button>
+                    </div>
+                </div>
+                <!---------------- projetos escondidos / end ----------------->
+                <button onclick="vermais()" id="ver" data-anima="up">ver mais</button>
+                <div class="git" data-anima="up">
+                    <button class="github" onclick="chamarGithub()">Repositórios no Github</button>
+                </div>
+            </div>
+        </section>
+          <!--    ---------- contatos --------------    -->
+        <section class="container-contatos">
+            <div class="contatos" id="contatos">
+                <h1 data-anima="down">
+                    Contatos
+                </h1>
+                <div class="contatos-container">
+                    <div class="info-contato">
+                        <div class="info-txt" data-anima="left">
+                            <p> Disponível para novos projetos e ofertas <br>
+                                Entre em contato comigo para conversar, estarei esperando!
+                            </p>
+                            <p id="paragrafo">Email: mauriciososmaiarnascimento@gmail.com</p>
+                            <div class="div-icones">
+                                <a href="https://github.com/m4uriciosn" target="_blank"><img class="icones" src="src/img/branco-placa-do-github.png" alt=""></a>
+                                <a href="https://www.instagram.com/m4uriciosn/" target="_blank"><img class="icones" src="src/img/branco-logotipo-do-instagram.png" alt=""></a>
+                                <a href="https://www.linkedin.com/in/maurício-sosmaiar-nascimento-/" target="_blank"><img class="icones" src="src/img/branco-logotipo-do-linkedin.png" alt=""></a>
+                            </div>
+                        </div>
+                        <img class="computador" src="src/img/computador.png" alt="" data-anima="right">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+       <!--  ---------  rodapé  -------- -->
+    <footer class="rodape">
+        <div class="referencias">
+        <a href="https://www.flaticon.com/br/icones-gratis/logotipo-do-instagram" title="logotipo do instagram ícones">Logotipo do instagram ícones criados por Freepik - Flaticon</a> <br>
+        <a href="https://www.flaticon.com/br/icones-gratis/linkedin" title="linkedin ícones">Linkedin ícones criados por Google - Flaticon</a> <br>
+        <a href="https://www.flaticon.com/br/icones-gratis/github" title="github ícones">Github ícones criados por Dave Gandy - Flaticon</a>
+        </div>
+        <div class="direitos">
+            <p>Desenvolvido por Maurício Sosmaiar Nascimento</p>
+            <p>@ 2023 Portfólio</p>
+        </div>
+    </footer>
+    <script src="src/js/animacoes.js"></script>
+    <script src="src/js/chamadas.js"></script>
+</body>
+</html>
