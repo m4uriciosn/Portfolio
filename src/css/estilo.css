@@ -57,6 +57,18 @@ header{
     margin: auto;
 }
 
+.btn-menu {
+    display: none;
+    border: none;
+    border-radius: 5px;
+    background-color: transparent;
+    margin: 8px;
+}
+
+.menu-responsivo {
+    display: none;
+}
+
 #logo-m {
     padding: 9px;
     margin-left: 20px;
@@ -65,12 +77,17 @@ header{
     border-radius: 50%;
 }
 
-.inicio {
-    padding: 15% 1% 10%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+.ini {
     background: linear-gradient(146deg, rgb(167,17,17,1) 50%, rgba(120, 16, 16) 50%);
+}
+
+.inicio {
+    padding: 15% 1.3% 10%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    max-width: 1200px;
 }
 
 .inicio h1 {
@@ -163,13 +180,10 @@ header{
 
 #mauricio {
     border-radius: 50%;
-    height: 20%;
+    margin-left: 150px;
     width: 20%;
-    margin-left: 100px;
-
     animation-name: slideInLeft;
     animation-duration: 1.5s;
-
     transition-duration: 0.3s;
     transition-delay: 0s;
 }
@@ -180,9 +194,9 @@ header{
 
 .SobreMim {
     display: flex;
-    padding: 8%;
+    padding: 150px 50px;
     justify-content: space-between;
-    max-width: 1700px;
+    max-width: 1150px;
     margin: auto;
 }
 
@@ -334,7 +348,7 @@ header{
 }
 
 .contatos .info-contato {
-    max-width: 1500px;
+    max-width: 1150px;
     margin: auto;
     display: flex;
     justify-content: space-around;
@@ -475,12 +489,54 @@ header{
 }
 
 @media (max-width: 510px) {
+
+    .menu-padrao {
+        display: none;
+    }
+
+    .btn-menu {
+        display: inline-block;
+        text-align: start;
+    }
+
+    .menu-responsivo {
+        display: block;
+        height: 0;
+        width: 100%;
+        z-index: 1001;
+        overflow-x: hidden;
+        transition: all .5s;
+        position: fixed;
+        left: 0;
+        top: 0;
+        background-color: rgba(90, 15, 15, 0.759);
+    }
+
+    .menu {
+        flex-direction: column;
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+    }
+    .menu a {
+        font-size: 25px;
+    }
+
+    .btn-fecha-menu {
+        position: absolute;
+        top: 0px;
+        right: 10px;
+        font-size: 50px;
+    }
+
     header {
         padding: 1px;
     }
 
     ul {
         padding: 0;
+        margin: auto;
     }
 
     li {

@@ -15,8 +15,12 @@ function vermais() {
 
 // botão responsivo
 
-function menu() {
-    const botao = ;
+function openMenu() {
+    document.querySelector(".menu-responsivo").style.height = '100vh';
+}
+
+function fechaMenu() {
+    document.querySelector(".menu-responsivo").style.height = '0';
 }
 
 // chamada dos botões de redes sociais e contatos
