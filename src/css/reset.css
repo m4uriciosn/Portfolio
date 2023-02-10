@@ -1,0 +1,16 @@
+/*  ------------- reset e variáveis ------------  */
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: aliceblue;
+    font-family: 'Poppins';
+}
+
+:root {
+    --corheader: rgb(90, 15, 15);
+    --corfundo1: rgb(167,17,17,1);
+    --corfundo2: rgba(120, 16, 16);
+    --corbotaop: rgb(72, 17, 17);
+}
