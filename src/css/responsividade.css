@@ -84,6 +84,7 @@
         left: 0;
         top: 0;
         background-color: rgba(90, 15, 15, 0.759);
+        backdrop-filter: blur(3px);
     }
 
     .menu {
