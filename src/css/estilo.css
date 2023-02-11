@@ -63,6 +63,8 @@ header{
     border-radius: 50%;
 }
 
+/* -------- inicio ------------*/
+
 .ini {
     background: linear-gradient(146deg, rgb(167,17,17,1) 50%, rgba(120, 16, 16) 50%);
 }
@@ -110,55 +112,6 @@ header{
     background-color: var(--corbotaop);
 }
 
-/*  -------   animação  --------   */
-
-@keyframes slideInLeft {
-    from {
-        transform: translateX(100px);
-    }
-
-    to {
-        transform: translateX(0px);
-    }
-}
-
-@keyframes slideInRight {
-    from {
-        transform: translateX(-100px);
-    }
-
-    to {
-        transform: translateX(0px);
-    }
-}
-
-[data-anima] {
-    opacity: 0;
-    transition: 1s;
-}
-
-[data-anima="down"] {
-    transform: translate3d(0, -100%, 0);
-}
-
-[data-anima="up"] {
-    transform: translate3d(0, 100%, 0);
-}
-
-[data-anima="left"] {
-    transform: translate3d(-100%, 0, 0);
-}
-
-[data-anima="right"] {
-    transform: translate3d(50px, 0, 0);
-}
-
-[data-anima].animate {
-    opacity: 1;
-    transform: translate3d(0, 0, 0);
-}
-
-/*  -------   animação - end   --------   */
 
 #mauricio:hover{
     transform: scale(1.1);
@@ -173,6 +126,8 @@ header{
     transition-duration: 0.3s;
     transition-delay: 0s;
 }
+
+/* ----------- Sobre Mim ----------------*/
 
 .s-sobremim {
     background-color: var(--corfundo1);
@@ -206,16 +161,15 @@ header{
     background-color: var(--corbotaop);
 }
 
-#coffe:hover{
-    transform: scale(1.1);
-    transition: 0.3s all ease-in-out;
-}
-
-#coffe {
+#img-sobremim {
     height: 300px;
-    width: 300px;
     border: 5px;
     border-radius: 30px;
+}
+
+#img-sobremim:hover{
+    transform: scale(1.1);
+    transition: 0.3s all ease-in-out;
 }
 
 .info-sobremim {

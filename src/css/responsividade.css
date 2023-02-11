@@ -1,18 +1,48 @@
 /*    responsividade     */
 
 @media (max-width: 860px) {
-    #coffe {
+    #img-sobremim {
         height: 150px;
     }
 
-    .contatos .info-contato {
+    .contatos .info-contato .info-txt {
         font-size: 15px;
         margin-left: 30px;
     }
 
     .contatos .info-contato .computador{
-        max-height: 140px;
-        width: 250px;
+        height: 200px;
+        border-radius: 50px;
+    }
+
+    .projetos .container-projetos {
+        padding: 0 19px;
+    }
+}
+
+@media (max-width: 780px) {
+    .txt {
+        padding-left: 30px;
+    }
+    
+    .contatos .info-contato {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .contatos .info-contato .info-txt {
+        margin: 0;
+        text-align: center;
+    }
+
+    .contatos .info-contato .info-txt .div-icones {
+        margin: auto;
+    }
+
+    .contatos .info-contato .computador{
+        margin: auto;
+        border-radius: 50px;
     }
 }
 
@@ -26,62 +56,13 @@
         padding: 20px;
     }
 
-    .inicio {
-        padding: 120px 0px 50px 30px;
+    #logo-m {
+        margin-top: 5px;
+        padding: 0px;
+        width: 50px;
+        height: 50px;
     }
-
-    .inicio h1 {
-        font-size: 25px;
-    }
-
-    .SobreMim {
-        display: flex;
-        flex-direction: column;
-    }
-
-    .SobreMim h1 {
-        font-size: 30px;
-        margin-top: 10px;
-    }
-
-    .info-sobremim p {
-        font-size: 12px;
-    }
-
-    #coffe {
-        text-align: center;
-        height: 150px;
-        width: 200px;
-    }
-
-    .info-sobremim {
-        margin-left: 0;
-    }
-
-    .projetos .container-projetos {
-        flex-direction: column;
-    }
-
-    .contatos .info-contato {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    .contatos .info-contato .computador{
-        max-width: 150px;
-        max-width: 200px;
-        border-radius: 50px;
-    }
-
-    .rodape {
-        padding: 7px;
-        font-size: 9px;
-    }
-}
-
-@media (max-width: 510px) {
-
+    
     .menu-padrao {
         display: none;
     }
@@ -89,6 +70,7 @@
     .btn-menu {
         display: inline-block;
         text-align: start;
+        margin: 13px;
     }
 
     .menu-responsivo {
@@ -110,6 +92,7 @@
         top: 25%;
         width: 100%;
         text-align: center;
+        padding: 0px;
     }
     .menu a {
         font-size: 25px;
@@ -122,27 +105,64 @@
         font-size: 50px;
     }
 
-    header {
-        padding: 1px;
+    .inicio {
+        padding: 120px 0px 50px 30px;
     }
 
-    ul {
-        padding: 0;
-        margin: auto;
+    .inicio h1 {
+        font-size: 25px;
     }
 
-    li {
-        padding: 5px 15px 09px 05px;
+    .txt {
+        padding-left: 0px;
     }
 
-    #logo-m {
-        display: none;
+    .SobreMim {
+        display: flex;
+        flex-direction: column;
+        padding: 80px 50px;
+    }
+
+    .SobreMim h1 {
+        font-size: 30px;
+        margin-top: 10px;
+    }
+
+    .info-sobremim p {
+        font-size: 12px;
+        margin-top: 5px;
+    }
+
+    #img-sobremim {
+        height: 150px;
+        width: 150px;
+    }
+
+    .info-sobremim {
+        margin-left: 0;
+    }
+
+    .projetos .container-projetos {
+        flex-direction: column;
+        padding: 0 50px;
+    }
+
+
+    .rodape {
+        padding: 7px;
+        font-size: 9px;
+    }
+}
+
+@media (max-width: 510px) {
+
+    #mauricio {
+        width: 40%;
     }
 
     .contatos .info-contato .computador{
-        max-width: 50px;
-        max-width: 150px;
-        border-radius: 50px;
+        height: 150px;
+        border-radius: 30px;
     }
 
     .contatos .info-contato {
@@ -172,6 +192,10 @@
         font-size: 12px;
     }
 
+    .info-sobremim p {
+        text-align: justify;
+    }
+
     .projetos h1 {
         font-size: 25px;
     }
@@ -184,6 +208,10 @@
         font-size: 25px;
         margin-bottom: 10px;
     }
+
+    #paragrafo {
+        display: none;
+    }
 }
 
 @media (max-width: 350px) {
@@ -192,4 +220,10 @@
         font-size: 10px;
     }
 
+}
+
+@media (max-width: 300px) {
+    #mauricio {
+        width: 30%;
+    }
 }
