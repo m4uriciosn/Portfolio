@@ -1,6 +1,26 @@
 /*    responsividade     */
 
+@media (min-width:2570px) {
+    #mauricio {
+        width: 30%;
+        margin-left: 50px;
+    }
+}
+
+@media (max-width: 1180px) {
+    #mauricio {
+        margin-left: 50px;
+        width: 20%;
+    }
+}
+
 @media (max-width: 860px) {
+
+    #mauricio {
+        margin-left: 200px;
+        width: 25%;
+    }
+
     #img-sobremim {
         height: 150px;
     }
@@ -118,6 +138,10 @@
         padding-left: 0px;
     }
 
+    .txt p {
+        font-size: 1rem;
+    }
+
     .SobreMim {
         display: flex;
         flex-direction: column;
@@ -159,6 +183,7 @@
 
     #mauricio {
         width: 40%;
+        margin-left: 150px;
     }
 
     .contatos .info-contato .computador{
