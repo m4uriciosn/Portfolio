@@ -66,7 +66,7 @@ header{
 /* -------- inicio ------------*/
 
 .ini {
-    background: linear-gradient(146deg, rgb(167,17,17,1) 50%, rgba(120, 16, 16) 50%);
+    background: linear-gradient(146deg, rgb(146, 17, 17) 50%, rgba(120, 16, 16) 50%);
 }
 
 .inicio {
@@ -160,6 +160,10 @@ header{
     cursor: pointer;
 }
 
+.material-icons {
+    font-size: 15px;
+}
+
 .SobreMim button:hover{
     transform: translateY(-5px);
     background-color: var(--corbotaop);
@@ -169,11 +173,11 @@ header{
     height: 300px;
     border: 5px;
     border-radius: 30px;
+    transition: 0.3s all ease-in-out;
 }
 
 #img-sobremim:hover{
     transform: scale(1.1);
-    transition: 0.3s all ease-in-out;
 }
 
 .info-sobremim {

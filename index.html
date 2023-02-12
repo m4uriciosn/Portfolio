@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
     <link rel="stylesheet" href="src/css/reset.css">
     <link rel="stylesheet" href="src/css/anima.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -13,7 +14,7 @@
     <link rel="shortcut icon" href="src/img/favicon.ico" type="image/x-icon">
     <title>Maurício Nascimento | Portfólio</title>
 </head>
-<body>
+<body onresize="removerBtn()">
     <header class="cabecalho">
         <div class="menu-geral">
             <a href="#inicio"><img id="logo-m" src="src/img/logo m.jpg" alt="logo 'M'"></a>
@@ -79,17 +80,17 @@
         <section class="s-sobremim">
             <article>
                 <div class="SobreMim" id="sobremim">
-                    <img id="img-sobremim" src="src/img/coffe.png" alt="codigo-café">
+                    <img id="img-sobremim" src="src/img/coffe.png" alt="desenvolvedor codando">
                     <div class="info-sobremim" data-anima="right">
                         <h1>Maurício Sosmaiar Nascimento</h1>
                         <p>Nascido em Porto Alegre - RS. <br>
                         Tenho 21 anos, resido em Rosário do Sul - RS e sou um desenvolvedor frontend formado em Análise e Desenvolvimento de Sistemas (2021 - 2023). <br>
                         Desenvolvo utilizando sobretudo <strong id="bold"> javascript, HTML5, CSS3 e SQL.</strong> <br>
                         Sempre fui um grande fã de jogos investigativos, de enigmas, e desafios de lógica. Vejo minhas paixões refletidas na programação, e talvez por isso eu esteja tão ansioso e animado.
-                        Comecei a estudar programação no final do primeiro semestre de 2021 por curiosidade e incentivo da família, mas continuo até hoje por prazer e satisfação.
-                        <!--Para mim as coisas mais atrativas no desenvolvimento web são as diversas formas de poder transformar criatividade e ideias em códigos que quando compilados da forma correta, formam um site.--></p>
+                        Comecei a estudar programação no final do primeiro semestre de 2021 por curiosidade e incentivo da família, mas continuo até hoje por prazer e satisfação.</p>
                         <button onclick="chamarlinkedin()">Linkedin</button>
                         <button onclick="chamarInstagram()">Instagram</button>
+                        <a href="src/pdf/curriculo-mauricio-nascimento.pdf" download="CV Mauricio Nascimento.pdf" type="application/pdf"><button><span class="material-icons">file_download</span> Download CV</button></a>
                     </div>
                 </div>
             </article>
@@ -102,7 +103,7 @@
                     <div class="breve">
                         <a href="https://projeto-dark-souls.netlify.app" target="_blank">
                             <abbr title="Projeto Dark Souls versão própria">
-                                <img id="" src="src/img/dark-souls.png" alt="imagem 'dark-souls'">
+                                <img id="" src="src/img/dark-souls.png" alt="imagem sobre dark souls">
                             </abbr>
                         </a>
                         <button onclick="chamarDark()">Dark Souls page</button>
@@ -110,7 +111,7 @@
                     <div class="breve">
                         <a href="https://m4uriciosn.github.io/Percy-Jackson/" target="_blank">
                             <abbr title="Página sobre uma saga de livros utilizando HTML e CSS">
-                                <img id="breve-img" src="src/img/percy-jackson.png" alt="imagem 'breve'">
+                                <img id="breve-img" src="src/img/percy-jackson.png" alt="imagem layout página do percy jackson">
                             </abbr>
                         </a>
                         <button onclick="chamarPercy()">Fanpage de Percy Jackson</button>
@@ -119,7 +120,7 @@
                     <div class="insta">
                         <a href="https://instagram-menos-que-original.netlify.app" target="_blank">
                             <abbr title="Projeto de css para recriar a tela de login do instagram">
-                                <img id="insta-img" src="src/img/instagram-png.png" alt="copia do instagram">
+                                <img id="insta-img" src="src/img/instagram-png.png" alt="cópia do instagram">
                             </abbr>
                         </a>
                         <button onclick="chamarInstagram()">Instagram Cópia</button>
@@ -130,7 +131,7 @@
                     <div class="enigma">
                         <a href="https://pre-alpha-codigo-safe.netlify.app" target="_blank">
                             <abbr title="jogo de enigmas desenvolvido em um final de semana, durante o inicio dos meus estudos sobre frontend">
-                                <img id="enigma-img" src="src/img/enigmas-png.png" alt="jogo-enigmas">
+                                <img id="enigma-img" src="src/img/enigmas-png.png" alt="jogo de enigmas">
                             </abbr>
                         </a>
                         <button onclick="chamarEnigma()">Jogo de Enigmas</button>
@@ -138,7 +139,7 @@
                     <div class="mario">
                         <a href="https://projeto-mario.netlify.app" target="_blank">
                             <abbr title="Projeto pessoal sobre uma landing page do novo filme do mário">
-                                <img id="mario-img" src="src/img/mario-png.png" alt="pagina sobre o mario">
+                                <img id="mario-img" src="src/img/mario-png.png" alt="pagina sobre o mário">
                             </abbr>
                         </a>
                         <button onclick="chamarMario()">Mario page</button>
@@ -146,7 +147,7 @@
                     <div class="flex">
                         <a href="https://flex-transportes.netlify.app" target="_blank">
                             <abbr title="Projeto de prática sobre flexbox em css">
-                                <img id="flex-img" src="src/img/flex-turismos-png.png" alt="flex-turismos">
+                                <img id="flex-img" src="src/img/flex-turismos-png.png" alt="layout flex-turismos">
                             </abbr>
                         </a>
                         <button onclick="chamarFlex()">Flex Turismos</button>
@@ -173,12 +174,12 @@
                             </p>
                             <p id="paragrafo">Email: mauriciososmaiarnascimento@gmail.com</p>
                             <div class="div-icones">
-                                <a href="https://github.com/m4uriciosn" target="_blank"><img class="icones" src="src/img/branco-placa-do-github.png" alt=""></a>
-                                <a href="https://www.instagram.com/m4uriciosn/" target="_blank"><img class="icones" src="src/img/branco-logotipo-do-instagram.png" alt=""></a>
-                                <a href="https://www.linkedin.com/in/maurício-sosmaiar-nascimento-/" target="_blank"><img class="icones" src="src/img/branco-logotipo-do-linkedin.png" alt=""></a>
+                                <a href="https://github.com/m4uriciosn" target="_blank"><img class="icones" src="src/img/branco-placa-do-github.png" alt="ícone do github"></a>
+                                <a href="https://www.instagram.com/m4uriciosn/" target="_blank"><img class="icones" src="src/img/branco-logotipo-do-instagram.png" alt="ícono do instagram"></a>
+                                <a href="https://www.linkedin.com/in/maurício-sosmaiar-nascimento-/" target="_blank"><img class="icones" src="src/img/branco-logotipo-do-linkedin.png" alt="icone do linkedin"></a>
                             </div>
                         </div>
-                        <img class="computador" src="src/img/computador.png" alt="" data-anima="right">
+                        <img class="computador" src="src/img/computador.png" alt="imagem computador com café" data-anima="right">
                     </div>
                 </div>
             </div>

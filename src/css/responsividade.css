@@ -121,8 +121,8 @@
 
     .btn-fecha-menu {
         position: absolute;
-        top: 0px;
-        right: 10px;
+        top: -9px;
+        right: 13px;
         font-size: 50px;
     }
 
