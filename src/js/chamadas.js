@@ -37,7 +37,7 @@ function removerBtn() {
     }
 }
 
-// Chamada dos botões de redes sociais e contatos
+// Chamada dos botões de redes sociais e projetos
 
 const linkedin = 'https://www.linkedin.com/in/maurício-sosmaiar-nascimento-/';
 const instagram = 'https://instagram-menos-que-original.netlify.app';
