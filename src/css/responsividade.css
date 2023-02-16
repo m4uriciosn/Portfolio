@@ -38,6 +38,7 @@
     .projetos .container-projetos {
         padding: 0 19px;
     }
+
 }
 
 @media (max-width: 780px) {
@@ -57,7 +58,9 @@
     }
 
     .contatos .info-contato .info-txt .div-icones {
+        padding: 20px;
         margin: auto;
+        justify-content: space-evenly;
     }
 
     .contatos .info-contato .computador{
@@ -122,7 +125,7 @@
     .btn-fecha-menu {
         position: absolute;
         top: -9px;
-        right: 13px;
+        right: 15px;
         font-size: 50px;
     }
 
@@ -171,7 +174,6 @@
         flex-direction: column;
         padding: 0 50px;
     }
-
 
     .rodape {
         padding: 7px;
