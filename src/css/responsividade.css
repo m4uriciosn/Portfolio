@@ -8,9 +8,17 @@
 }
 
 @media (max-width: 1180px) {
+    .inicio {
+        justify-content: center;
+    }
+
+    .txt {
+        width: 100%;
+    }
+    
     #mauricio {
-        margin-left: 50px;
-        width: 20%;
+        margin-left: 400px;
+        width: 30%;
     }
 }
 
@@ -139,6 +147,7 @@
 
     .txt {
         padding-left: 0px;
+        width: 100%;
     }
 
     .txt p {

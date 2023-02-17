@@ -20,6 +20,15 @@
     }
 }
 
+@keyframes pisca {
+    0%, 100% {
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+}
+
 [data-anima] {
     opacity: 0;
     transition: 1.5s;
