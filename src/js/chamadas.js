@@ -40,7 +40,8 @@ function removerBtn() {
 // Chamada dos botões de redes sociais e projetos
 
 const linkedin = 'https://www.linkedin.com/in/maurício-sosmaiar-nascimento-/';
-const instagram = 'https://instagram-menos-que-original.netlify.app';
+const instagram = 'https://www.instagram.com/m4uriciosn/'
+const instagramFake = 'https://instagram-menos-que-original.netlify.app';
 const flex = 'https://flex-transportes.netlify.app';
 const mario = 'https://projeto-mario.netlify.app';
 const git = 'https://github.com/m4uriciosn?tab=repositories';
@@ -51,8 +52,11 @@ const percy = 'https://m4uriciosn.github.io/Percy-Jackson/';
 function chamarlinkedin(){
     window.location = linkedin;
 }
-function chamarInstagram(){
-    window.location = instagram;
+function chamarInstagram() {
+    window.location = instagram
+}
+function chamarInstagramFake(){
+    window.location = instagramFake;
 }
 function chamarFlex(){
     window.location = flex;
