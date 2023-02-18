@@ -98,13 +98,13 @@ header{
 }
 
 #apresentacao{
-    margin-top: 3%;
+    margin-top: 15px;
 }
 
 #botao-inicio {
     background-color: var(--corfundo2);
     padding: 14px;
-    margin-top: 3%;
+    margin-top: 15px;
     border: 0ch;
     transition-property: transform;
     transition-duration: 0.3s;
