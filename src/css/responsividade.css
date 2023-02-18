@@ -210,9 +210,10 @@
     }
 
     .contatos .info-contato .info-txt .div-icones {
-        padding: 40px;
+        padding: 15px;
         width: 200px;
         display: flex;
+        justify-content: space-evenly;
     }
 
     .contatos .info-contato .info-txt .icones {
