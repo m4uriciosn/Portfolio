@@ -103,7 +103,7 @@ header{
 
 #botao-inicio {
     background-color: var(--corfundo2);
-    padding: 2%;
+    padding: 14px;
     margin-top: 3%;
     border: 0ch;
     transition-property: transform;
