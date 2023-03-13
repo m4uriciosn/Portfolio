@@ -9,7 +9,10 @@
 
 @media (max-width: 1180px) {
     .inicio {
-        justify-content: center;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        padding: 16% 50px 10%;
     }
 
     .txt {

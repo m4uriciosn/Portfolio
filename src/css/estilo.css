@@ -70,12 +70,13 @@ header{
 }
 
 .inicio {
-    padding: 16% 50px 10%;
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    align-items: center;
     margin: 0 auto;
     max-width: 1150px;
+    height: 100vh;
+    padding: 77px 50px 0 50px;
 }
 
 .inicio h1 {
@@ -126,7 +127,6 @@ header{
     border-radius: 50%;
     margin-left: 90px;
     width: 21%;
-    height: 21%;
     animation-name: slideInLeft;
     animation-duration: 1.5s;
     transition-duration: 0.3s;

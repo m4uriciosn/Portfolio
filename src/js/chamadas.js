@@ -42,7 +42,7 @@ function removerBtn() {
 const linkedin = 'https://www.linkedin.com/in/maurício-sosmaiar-nascimento-/';
 const instagram = 'https://www.instagram.com/m4uriciosn/'
 const instagramFake = 'https://instagram-menos-que-original.netlify.app';
-const flex = 'https://flex-transportes.netlify.app';
+const hog = 'https://m4uriciosn.github.io/Hogwarts-Legacy/'
 const mario = 'https://projeto-mario.netlify.app';
 const git = 'https://github.com/m4uriciosn?tab=repositories';
 const enigma = 'https://pre-alpha-codigo-safe.netlify.app';
@@ -58,8 +58,8 @@ function chamarInstagram() {
 function chamarInstagramFake(){
     window.location = instagramFake;
 }
-function chamarFlex(){
-    window.location = flex;
+function chamarHog(){
+    window.location = hog;
 }
 function chamarMario(){
     window.location = mario;
