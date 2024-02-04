@@ -1,4 +1,4 @@
-// Botão Ver Mais
+   // Botão Ver Mais
 
 const escondido = document.getElementById('div-escondido');
 const ver = document.getElementById('ver');
